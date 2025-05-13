@@ -110,7 +110,7 @@ Route::middleware('auth:api')->group(function () {
 Route::get('/blog-data-front', [BlogController::class, 'getBlogData']);
 
 
-Route::get('show', [BlogController::class, 'showBlog'])->name('show.blog');
+Route::get('/show', [BlogController::class, 'showBlog'])->name('show.blog');
 
 
 
